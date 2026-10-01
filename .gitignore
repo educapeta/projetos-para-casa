@@ -1,0 +1,10 @@
+# Lixo do Windows / macOS
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Arquivos temporarios e de bloqueio (lock) do SolidWorks e afins
+~$*
+*.bak
+*.swp
+*.tmp

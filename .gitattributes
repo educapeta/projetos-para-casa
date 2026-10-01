@@ -1,0 +1,43 @@
+# Normalizacao de fim de linha para arquivos de texto
+* text=auto
+
+# ============ Git LFS (arquivos muito grandes) ============
+# .gx  -> projetos/malhas exportadas (alguns passam de 100 MB, limite do GitHub)
+# .fpp -> projeto do fatiador FlashPrint (fica no Git normal)
+*.gx       filter=lfs diff=lfs merge=lfs -text
+*.mp4      filter=lfs diff=lfs merge=lfs -text
+*.rar      filter=lfs diff=lfs merge=lfs -text
+*.zip      filter=lfs diff=lfs merge=lfs -text
+
+# ============ Binarios CAD / 3D (mantidos no Git normal) ============
+# STL e OBJ ficam fora do LFS de proposito: assim o GitHub mostra o
+# visualizador 3D no navegador ao abrir o arquivo.
+*.SLDPRT   binary
+*.SLDASM   binary
+*.SLDDRW   binary
+*.STL      binary
+*.stl      binary
+*.obj      binary
+*.fpp      binary
+*.IGS      binary
+*.igs      binary
+*.x_t      binary
+*.stp      binary
+*.step     binary
+*.STEP     binary
+*.ipt      binary
+*.iam      binary
+*.dwg      binary
+*.DXF      binary
+*.dxf      binary
+*.smg      binary
+*.smgXml   binary
+*.smgSce   binary
+*.smgProj  binary
+*.smgView  binary
+*.3mf      binary
+*.JPG      binary
+*.jpg      binary
+*.pdf      binary
+*.docx     binary
+*.xlsx     binary
